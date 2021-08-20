@@ -1,3 +1,3 @@
 # tvmaze-network
 
-A description of this package.
+Network Layer for TV Maze APP
