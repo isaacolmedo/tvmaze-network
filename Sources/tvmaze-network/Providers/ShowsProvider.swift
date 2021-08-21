@@ -12,9 +12,9 @@ import RxSwift
 import Alamofire
 import SystemConfiguration
 
-class ShowsProvider: Provider {
+public class ShowsProvider: Provider {
 
-    let provider: MoyaProvider<ShowsService>
+    public let provider: MoyaProvider<ShowsService>
     fileprivate let reachability: SCNetworkReachability? = SCNetworkReachabilityCreateWithName(nil, "www.google.com")
     
     public init() {

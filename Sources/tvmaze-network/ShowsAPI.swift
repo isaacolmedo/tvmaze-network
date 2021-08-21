@@ -6,5 +6,5 @@ public final class ShowsAPI {
     
     private let provider = ShowsProvider()
     
-    func fetchShows() -> Single<[Show]> { provider.request(.shows) }
+    public func fetchShows() -> Single<[Show]> { provider.request(.shows) }
 }

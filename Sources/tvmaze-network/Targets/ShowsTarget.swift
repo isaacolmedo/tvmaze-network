@@ -10,34 +10,34 @@ import Foundation
 
 // MARK: - TargetType Protocol Implementation
 extension ShowsService: TargetType {
-    var baseURL: URL { return URL(string: "https://api.tvmaze.com/")! }
-    var path: String {
+    public var baseURL: URL { return URL(string: "https://api.tvmaze.com/")! }
+    public var path: String {
         switch self {
         case .shows:
             return "shows"
         }
     }
 
-    var method: Moya.Method {
+    public var method: Moya.Method {
         switch self {
         case .shows:
             return .get
         }
     }
-    var task: Task {
+    public var task: Task {
         switch self {
         case .shows:
             return .requestPlain
         }
     }
-    var sampleData: Data {
+    public var sampleData: Data {
         switch self {
         case .shows:
             return "".utf8Encoded
         }
     }
     
-    var headers: [String: String]? {
+    public var headers: [String: String]? {
         return ["Content-type": "application/json"]
     }
 }

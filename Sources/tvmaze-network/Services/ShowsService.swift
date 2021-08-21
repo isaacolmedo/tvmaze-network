@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum ShowsService {
+public enum ShowsService {
     case shows
 }

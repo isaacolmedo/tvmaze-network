@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Show
-struct Show: Decodable {
+public struct Show: Decodable {
     let id: Int
     let url: String
     let name, type, language: String
@@ -29,45 +29,45 @@ struct Show: Decodable {
 }
 
 // MARK: - Externals
-struct Externals: Decodable {
+public struct Externals: Decodable {
     let tvrage, thetvdb: Int?
     let imdb: String?
 }
 
 // MARK: - Image
-struct Image: Decodable {
+public struct Image: Decodable {
     let medium, original: String
 }
 
 // MARK: - Links
-struct Links: Decodable {
+public struct Links: Decodable {
     let linksSelf, previousepisode: Previousepisode
 }
 
 // MARK: - Previousepisode
-struct Previousepisode: Decodable {
+public struct Previousepisode: Decodable {
     let href: String
 }
 
 // MARK: - Network
-struct Network: Decodable {
+public struct Network: Decodable {
     let id: Int
     let name: String
     let country: Country
 }
 
 // MARK: - Country
-struct Country: Decodable {
+public struct Country: Decodable {
     let name, code, timezone: String
 }
 
 // MARK: - Rating
-struct Rating: Decodable {
+public struct Rating: Decodable {
     let average: Double?
 }
 
 // MARK: - Schedule
-struct Schedule: Decodable {
+public struct Schedule: Decodable {
     let time: String
     let days: [String]
 }
